@@ -1,4 +1,7 @@
-local lspconfig = require("lspconfig")
+local lspconfig_ok, lspconfig = pcall(require, "lspconfig")
+if not lspconfig_ok then
+	return
+end
 
 local servers = {
 	bashls = require("lsp.language-server-config.bashls"),
@@ -7,9 +10,5 @@ local servers = {
 }
 
 for name, config in pairs(servers) do
-	if config ~= nil and type(config) == "table" then
-		config.setup(lspconfig[name])
-	else
-		lspconfig[name].setup({})
-	end
+	config.setup(lspconfig[name])
 end

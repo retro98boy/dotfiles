@@ -12,11 +12,11 @@ local diagnostics = null_ls.builtins.diagnostics
 
 null_ls.setup({
 	sources = {
-		-- formatting.beautysh,
 		formatting.clang_format,
 		formatting.shfmt,
 		formatting.stylua,
 		diagnostics.clang_check,
 		-- diagnostics.luacheck,
+		diagnostics.shellcheck,
 	},
 })

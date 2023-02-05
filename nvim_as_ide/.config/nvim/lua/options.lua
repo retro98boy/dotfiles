@@ -12,9 +12,9 @@ opt.autoread = true -- 文件被其他编辑器修改后，会自动重载
 opt.number = true -- 开启行号
 opt.relativenumber = true -- 开启相对行号
 opt.numberwidth = 2 -- 行号列的宽度
-opt.wrap = true -- 开启自动换行
+opt.wrap = false -- 关闭自动换行
 opt.linebreak = true -- 和wrap搭配使用，自动换行时不拆词
-opt.cmdheight = 2 -- 下方cmd界面高度
+opt.cmdheight = 1 -- 下方cmd界面高度
 opt.signcolumn = "yes" -- 总是显示左侧符号列，一些插件使用到，例如断点调试符号
 opt.showtabline = 2 -- 总是在顶部显示tab栏
 opt.showmode = false -- 禁用内置的底部模式显示，类似-- INSERT --
@@ -22,7 +22,7 @@ opt.pumheight = 10 -- 弹出窗口大小
 opt.splitbelow = true -- 垂直分割时，新窗口从上面出现
 opt.splitright = true -- 水平分割时，新窗口从右边出现
 opt.cursorline = true -- 高亮当前行
-opt.cursorcolumn = true -- 高亮当前列
+-- opt.cursorcolumn = true -- 高亮当前列
 opt.scrolloff = 8 -- 光标上下移动时，上边和下边保留的行数，继续移动光标开始滚屏
 opt.sidescrolloff = 8 -- 光标左右移动时，左边和右边保留的行数，继续移动光标开始滚屏
 opt.whichwrap = "<,>,[,],h,l" -- 光标在行首/行尾时哪些横向移动的按键可以跳到上/下一行
@@ -43,3 +43,11 @@ opt.updatetime = 300 -- 300ms没有输入就更新磁盘上的交换文件
 opt.timeoutlen = 500 -- 500ms没有按键继续输入才认为此次输入完成，过短可能会来不及使用快捷键，过长会反应较慢
 opt.compatible = false -- 不兼容传统的Vi
 opt.runtimepath:remove("/usr/share/vim/vimfiles") -- 将Vim的配置从Neovim的runtimepath中移除
+-- opt.list = true -- 显示不可见字符如空格换行等
+-- opt.listchars:append("space:⋅")
+-- opt.listchars:append("eol:↴")
+opt.foldmethod = "expr" -- 基于nvim-treesitter折叠文本
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+opt.foldenable = false -- 默认不要折叠
+opt.foldlevel = 99
+opt.completeopt = { "menuone", "noselect" }

@@ -40,7 +40,7 @@ end
 lualine.setup({
 	options = {
 		theme = "auto",
-		ignore_focus = {},
+		icons_enabled = true,
 		always_divide_middle = true, -- 永远对称，即使段x y z不存在，段a b c也不能接管整个状态栏
 		globalstatus = true, -- 只有一个全局的lualine，而不是每个窗口都有一个，需要Neovim 0.7版本及以上
 		-- https://github.com/ryanoasis/powerline-extra-symbols
@@ -53,14 +53,9 @@ lualine.setup({
 			left = "",
 			right = "",
 		},
-		disabled_filetypes = { -- 在一些文件中关闭lualine
-			statusline = {},
-			winbar = {},
-		},
-		refresh = {
-			statusline = 1000,
-			tabline = 1000,
-			winbar = 1000,
+		disabled_filetypes = { -- 一些场景中关闭lualine
+			"alpha",
+			"dashboard",
 		},
 	},
 	sections = {

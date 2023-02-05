@@ -16,12 +16,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- 保存此文件后Neovim会自动执行PackerSync
-vim.cmd([[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
-  augroup end
-]])
+-- vim.cmd([[
+--   augroup packer_user_config
+--     autocmd!
+--     autocmd BufWritePost plugins.lua source <afile> | PackerSync
+--   augroup end
+-- ]])
 
 local packer_ok, packer = pcall(require, "packer")
 if not packer_ok then
@@ -47,23 +47,25 @@ return packer.startup(function(use)
 	use("projekt0n/github-nvim-theme")
 
 	-- ui
-	use("nvim-lualine/lualine.nvim") -- 底部状态栏
-	use({ "akinsho/bufferline.nvim", requires = { "nvim-tree/nvim-web-devicons" } }) -- 顶部buffer多标签
-	use("famiu/bufdelete.nvim") -- 缓冲区关闭插件，避免自带的bdelete命令可能会导致窗口布局变乱的问题
-
-	-- file
-	use({ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } })
-	use({ "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } })
-
-	-- edit
+	use("rcarriga/nvim-notify") -- 更美观的通知
+	use({ "nvim-lualine/lualine.nvim", requires = { "nvim-tree/nvim-web-devicons" } }) -- 底部状态栏
+	use({ "akinsho/bufferline.nvim", requires = { "nvim-tree/nvim-web-devicons" } }) -- 顶部多标签
+	use("NvChad/nvim-colorizer.lua") -- 将缓冲区中的色值实时渲染
+	use({ "folke/todo-comments.nvim", requires = { "nvim-lua/plenary.nvim" } }) -- 高亮显示注释中的TODO、FIX等
 	use("nvim-treesitter/nvim-treesitter")
-	use("windwp/nvim-autopairs") -- 自动输入括号对，可以搭配nvim-cmp、nvim-treesitter使用
-	use("kylechui/nvim-surround") -- 成对修改""、''、()等
 	use({ "mrjones2014/nvim-ts-rainbow", requires = { "nvim-treesitter/nvim-treesitter" } }) -- 基于nvim-treesitter的彩虹色括号对，没有单独Lua文件配置
-	use("numToStr/Comment.nvim") -- 注释代码
 	use("lukas-reineke/indent-blankline.nvim") -- 缩进指示线
+
+	-- tool
+	use({ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } }) -- 文件管理
+	use({ "nvim-telescope/telescope.nvim", requires = { "nvim-lua/plenary.nvim" } }) -- 模糊搜索
+	use("akinsho/toggleterm.nvim") -- 浮动终端
+	use("windwp/nvim-autopairs") -- 括号自动补全
+	use("kylechui/nvim-surround") -- 成对修改""、''、()等
+	use("numToStr/Comment.nvim") -- 注释代码
 	use("ggandor/leap.nvim") -- 光标跳转
 	use("asiryk/auto-hlsearch.nvim") -- 搜索结果高亮自动处理
+	use("famiu/bufdelete.nvim") -- 缓冲区关闭插件，避免自带的bdelete命令可能会导致窗口布局变乱的问题
 
 	-- cmp
 	use("hrsh7th/nvim-cmp") -- Lua编写的Neovim补全引擎，补全源来自外部
@@ -78,12 +80,22 @@ return packer.startup(function(use)
 	use("rafamadriz/friendly-snippets") -- 一些常用的代码片段
 
 	-- lsp
-	use("neovim/nvim-lspconfig") -- 官方内置LSP快速配置
+	-- https://github.com/williamboman/mason-lspconfig.nvim#setup
+	-- 加载顺序很重要：
+	-- null-ls -> mason-null-ls
+	-- mason-lspconfig -> nvim-lspconfig
+	use({ "williamboman/mason.nvim" }) -- LSP、DAP、Formatter可执行文件安装
 	use({ "jose-elias-alvarez/null-ls.nvim", requires = { "nvim-lua/plenary.nvim" } })
+	use("jay-babu/mason-null-ls.nvim") -- 自动安装通过null-ls配置好的Formatter等
+	use("williamboman/mason-lspconfig.nvim") -- 自动安装通过nvim-lspconfig配置好的服务器可执行文件
+	use("neovim/nvim-lspconfig") -- 官方内置LSP快速配置
 	use("j-hui/fidget.nvim") -- LSP处理过程显示
-	use("smjonas/inc-rename.nvim") -- 实时显示的LSP符号重命名
-	use("simrat39/symbols-outline.nvim") -- 符号大纲
+	-- use("smjonas/inc-rename.nvim") -- 实时显示的LSP符号重命名
+	-- use("simrat39/symbols-outline.nvim") -- 符号大纲
 	use({ "ldelossa/litee-calltree.nvim", requires = { "ldelossa/litee.nvim" } }) -- 符号调用树
+	use({ "glepnir/lspsaga.nvim", requires = { "nvim-tree/nvim-web-devicons" } }) -- Neovim内置LSP增强
+
+	-- debug
 
 	-- 如果packer.nvim下载成功，开始同步所有插件
 	if PACKER_BOOTSTRAP then

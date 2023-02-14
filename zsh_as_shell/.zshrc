@@ -27,11 +27,11 @@ setopt PUSHD_SILENT         # 在pushd或popd之后不打印目录堆栈
 setopt PUSHD_TO_HOME        # pushd没有给出参数时等同于pushd ~
 alias d='dirs -v'
 for index in {0..9}; do
-  alias "$index"="cd +${index}"
+  alias $index="cd +${index}"
 done
 unset index
 DIRSTACKSIZE=40
-DIRSTACKFILE="$HOME/.cache/zsh/dirstack"
+DIRSTACKFILE=$HOME/.cache/zsh/dirstack
 if [[ ! -f $DIRSTACKFILE ]]; then
 	mkdir -p $(dirname $DIRSTACKFILE)
 	touch $DIRSTACKFILE
@@ -53,7 +53,7 @@ source ~/.local/share/zsh/plugins/zsh-completions/zsh-completions.plugin.zsh
 autoload -Uz compinit    # autoload将compinit标记成$fpath中的函数而不是$PATH中的可执行文件，函数名和文件名相同，即compinit函数定义在compinit文件中；U选项表示在加载函数过程中抑制alias，z选项表示函数使用zsh风格加载；autoload只会在需要时加载函数
 compinit    # 生成.zcompdump文件
 zstyle ':completion:*' rehash true    # $PATH中有新可执行文件时，命令补全系统同步更新
-# 自带的docker命令补全开启选项堆叠 https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
+# docker命令补全开启选项堆叠 https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/docker
 zstyle ':completion:*:*:docker:*' option-stacking yes
 zstyle ':completion:*:*:docker-*:*' option-stacking yes
 
@@ -91,24 +91,3 @@ promptinit
 prompt pure
 PURE_PROMPT_SYMBOL='>'
 PURE_PROMPT_VICMD_SYMBOL='<'
-# https://github.com/sindresorhus/pure/wiki/Color-schemes
-typeset -A pure_halloween_scheme=(
-	color1 "#E84000" # Tangelo
-	color2 "#EB6123" # Halloween Orange
-	color3 "#FFE5D5" # Flesh
-	color4 "#F1B111" # Spanish Yellow
-	color5 "#FF1A72" # Electric Pink
-	color6 "#E40055" # Raspberry
-)
-zstyle :prompt:pure:execution_time      color $pure_halloween_scheme[color3]
-zstyle :prompt:pure:git:arrow           color $pure_halloween_scheme[color5]
-zstyle :prompt:pure:git:branch          color $pure_halloween_scheme[color2]
-zstyle :prompt:pure:git:branch:cached   color $pure_halloween_scheme[color1]
-zstyle :prompt:pure:git:dirty           color $pure_halloween_scheme[color4]
-zstyle :prompt:pure:host                color $pure_halloween_scheme[color6]
-zstyle :prompt:pure:path                color $pure_halloween_scheme[color1]
-zstyle :prompt:pure:prompt:error        color $pure_halloween_scheme[color1]
-zstyle :prompt:pure:prompt:success      color $pure_halloween_scheme[color4]
-zstyle :prompt:pure:user                color $pure_halloween_scheme[color4]
-zstyle :prompt:pure:user:root           color $pure_halloween_scheme[color3]
-zstyle :prompt:pure:virtualenv          color $pure_halloween_scheme[color6]

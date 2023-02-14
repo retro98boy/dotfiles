@@ -5,8 +5,9 @@ end
 
 toggleterm.setup({
 	size = 20,
-	open_mapping = [[<c-\>]],
+	open_mapping = [[<C-\>]],
 	hide_numbers = false,
+	autochdir = true,
 	shade_filetypes = {},
 	shade_terminals = true,
 	shading_factor = 3,
@@ -19,9 +20,5 @@ toggleterm.setup({
 	float_opts = {
 		border = "curved",
 		winblend = 3,
-		highlights = {
-			border = "Normal",
-			background = "Normal",
-		},
 	},
 })

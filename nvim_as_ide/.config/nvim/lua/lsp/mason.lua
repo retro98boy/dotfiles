@@ -22,11 +22,11 @@ mason_lspconfig.setup({
 		-- "clangd",
 		-- "sumneko_lua",
 	},
-	automatic_installation = true, -- 自动安装通过nvim-lspconfig配置好的服务器，和上面选项无关
+	automatic_installation = false, -- 是否自动安装通过nvim-lspconfig配置好的服务器，和上面选项无关
 })
 
 mason_null_ls.setup({
 	-- 需要安装的列表
 	ensure_installed = {},
-	automatic_installation = true, -- 自动安装通过null-ls配置好的Formatter等，和上面选项无关
+	automatic_installation = false, -- 是否自动安装通过null-ls配置好的Formatter等，和上面选项无关
 })

@@ -19,6 +19,7 @@ require("tool.nvim-surround")
 require("tool.comment")
 require("tool.leap")
 require("tool.auto-hlsearch")
+require("tool.mini-move")
 -- cmp
 require("cmp.nvim-cmp")
 require("cmp.neodev")
@@ -32,7 +33,6 @@ require("lsp.mason")
 require("lsp.nvim-lspconfig")
 require("lsp.fidget")
 -- require("lsp.inc-rename") -- 被glepnir/lspsaga.nvim替代
--- require("lsp.symbols-outline") -- 被glepnir/lspsaga.nvim替代
 require("lsp.litee")
 require("lsp.litee-calltree")
 require("lsp.lspsaga")

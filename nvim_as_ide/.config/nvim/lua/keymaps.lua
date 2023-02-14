@@ -34,21 +34,13 @@ map("n", "<C-Down>", ":resize +2<CR>", opts)
 map("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 map("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- 插入模式下移动光标
-map("i", "<A-k>", "<Up>", opts)
-map("i", "<A-j>", "<Down>", opts)
-map("i", "<A-h>", "<Left>", opts)
-map("i", "<A-l>", "<Right>", opts)
+-- 插入模式下的Emacs按键绑定
+map("i", "<C-p>", "<Up>", opts)
+map("i", "<C-n>", "<Down>", opts)
+map("i", "<C-b>", "<Left>", opts)
+map("i", "<C-f>", "<Right>", opts)
 map("i", "<C-a>", "<Home>", opts)
 map("i", "<C-e>", "<End>", opts)
-
--- 多行文本上下移动
-map("v", "<S-k>", ":m '<-2<CR>gv=gv", opts)
-map("v", "<S-j>", ":m '>+1<CR>gv=gv", opts)
-
--- 翻页
-map("n", "<C-u>", "10k", opts)
-map("n", "<C-d>", "10j", opts)
 
 -- buffer导航
 map("n", "<A-/>", ":Bdelete!<CR>", opts)
@@ -59,6 +51,7 @@ map("n", "<A-.>", ":bnext<CR>", opts)
 
 -- nvim-tree
 map("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
+map("n", "<Leader>ef", ":NvimTreeFindFile<CR>", opts)
 
 -- telescope
 map("n", "<Leader>ff", ":Telescope find_files<CR>", opts)

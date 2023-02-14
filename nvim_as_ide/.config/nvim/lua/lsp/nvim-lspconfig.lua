@@ -6,7 +6,7 @@ end
 local servers = {
 	bashls = require("lsp.language-server-config.bashls"),
 	clangd = require("lsp.language-server-config.clangd"),
-	sumneko_lua = require("lsp.language-server-config.sumneko_lua"),
+	lua_ls = require("lsp.language-server-config.lua_ls"),
 }
 
 for name, config in pairs(servers) do

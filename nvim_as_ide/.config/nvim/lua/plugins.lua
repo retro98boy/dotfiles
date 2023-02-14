@@ -66,6 +66,7 @@ return packer.startup(function(use)
 	use("ggandor/leap.nvim") -- 光标跳转
 	use("asiryk/auto-hlsearch.nvim") -- 搜索结果高亮自动处理
 	use("famiu/bufdelete.nvim") -- 缓冲区关闭插件，避免自带的bdelete命令可能会导致窗口布局变乱的问题
+	use("echasnovski/mini.move") -- 文本移动
 
 	-- cmp
 	use("hrsh7th/nvim-cmp") -- Lua编写的Neovim补全引擎，补全源来自外部
@@ -91,7 +92,6 @@ return packer.startup(function(use)
 	use("neovim/nvim-lspconfig") -- 官方内置LSP快速配置
 	use("j-hui/fidget.nvim") -- LSP处理过程显示
 	-- use("smjonas/inc-rename.nvim") -- 实时显示的LSP符号重命名
-	-- use("simrat39/symbols-outline.nvim") -- 符号大纲
 	use({ "ldelossa/litee-calltree.nvim", requires = { "ldelossa/litee.nvim" } }) -- 符号调用树
 	use({ "glepnir/lspsaga.nvim", requires = { "nvim-tree/nvim-web-devicons" } }) -- Neovim内置LSP增强
 

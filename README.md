@@ -136,3 +136,9 @@ sudo pacman -S kitty
 ```
 ln -svf ~/dotfiles/kitty_as_terminal/.config/kitty ~/.config/kitty
 ```
+
+# clangd
+
+```
+ln -svf ~/dotfiles/clangd_global_config/.config/clangd ~/.config/clangd
+```

@@ -3,12 +3,13 @@ local lsp_opts = {}
 -- 针对当前缓冲区lsp加载后的按键映射
 lsp_opts.on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true }
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", ":Lspsaga peek_definition<CR>", opts) -- 转到定义
+	vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", ":Lspsaga peek_definition<CR>", opts) -- 转到定义，在窗口中
+	vim.api.nvim_buf_set_keymap(bufnr, "n", "gl", ":lua vim.lsp.buf.definition<CR>", opts) -- 转到定义的位置
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts) -- 转到声明
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", ":Lspsaga lsp_finder<CR>", opts) -- 转到引用（包括定义）
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", ":lua vim.lsp.buf.implementation()<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gy", ":lua vim.lsp.buf.type_definition()<CR>", opts)
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "K", ":Lspsaga hover_doc<CR>", opts)
+	vim.api.nvim_buf_set_keymap(bufnr, "n", "gk", ":Lspsaga hover_doc<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "]d", ":Lspsaga diagnostic_jump_next<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "[d", ":Lspsaga diagnostic_jump_prev<CR>", opts)
 	-- vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>rn", ":IncRename ", opts) -- inc-rename符号重命名
@@ -18,6 +19,7 @@ lsp_opts.on_attach = function(client, bufnr)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>oc", ":lua vim.lsp.buf.outgoing_calls()<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>ca", ":Lspsaga code_action<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>f", ":lua vim.lsp.buf.format()<CR>", opts)
+	vim.keymap.set("v", "<Leader>f", vim.lsp.buf.format, { buffer = bufnr, noremap = true, silent = true }) -- 范围格式化
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>wa", ":lua vim.lsp.buf.add_workspace_folder()<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "<Leader>wr", ":lua vim.lsp.buf.remove_workspace_folder()<CR>", opts)
 	vim.api.nvim_buf_set_keymap(

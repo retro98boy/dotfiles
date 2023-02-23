@@ -28,6 +28,18 @@ map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-h>", "<C-w>h", opts)
 map("n", "<C-l>", "<C-w>l", opts)
 
+-- 插入模式下移动光标
+map("i", "<C-k>", "<Up>", opts)
+map("i", "<C-j>", "<Down>", opts)
+map("i", "<C-h>", "<Left>", opts)
+map("i", "<C-l>", "<Right>", opts)
+
+-- 普通模式下光标快速移动
+map("n", "<S-k>", "<C-u>", opts)
+map("n", "<S-j>", "<C-d>", opts)
+map("n", "<S-h>", "^", opts)
+map("n", "<S-l>", "$", opts)
+
 -- 窗口大小缩放
 map("n", "<C-Up>", ":resize -2<CR>", opts)
 map("n", "<C-Down>", ":resize +2<CR>", opts)

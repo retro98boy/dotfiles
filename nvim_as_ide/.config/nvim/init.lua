@@ -32,8 +32,5 @@ require("lsp.null-ls")
 require("lsp.mason")
 require("lsp.nvim-lspconfig")
 require("lsp.fidget")
--- require("lsp.inc-rename") -- 被glepnir/lspsaga.nvim替代
-require("lsp.litee")
-require("lsp.litee-calltree")
 require("lsp.lspsaga")
 -- debug

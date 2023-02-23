@@ -91,8 +91,6 @@ return packer.startup(function(use)
 	use("williamboman/mason-lspconfig.nvim") -- 自动安装通过nvim-lspconfig配置好的服务器可执行文件
 	use("neovim/nvim-lspconfig") -- 官方内置LSP快速配置
 	use("j-hui/fidget.nvim") -- LSP处理过程显示
-	-- use("smjonas/inc-rename.nvim") -- 实时显示的LSP符号重命名
-	use({ "ldelossa/litee-calltree.nvim", requires = { "ldelossa/litee.nvim" } }) -- 符号调用树
 	use({ "glepnir/lspsaga.nvim", requires = { "nvim-tree/nvim-web-devicons" } }) -- Neovim内置LSP增强
 
 	-- debug

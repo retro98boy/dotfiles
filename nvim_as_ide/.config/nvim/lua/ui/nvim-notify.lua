@@ -17,7 +17,7 @@ notify.setup({
 	minimum_width = 50,
 	render = "default",
 	stages = "fade",
-	timeout = 5000,
+	timeout = 3000,
 	top_down = true,
 })
 

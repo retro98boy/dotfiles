@@ -35,9 +35,10 @@ map("i", "<C-h>", "<Left>", opts)
 map("i", "<C-l>", "<Right>", opts)
 
 -- 普通模式下光标快速移动
-map("n", "<S-k>", "<C-u>", opts)
-map("n", "<S-j>", "<C-d>", opts)
-map("n", "<S-h>", "^", opts)
+map("n", "<S-k>", "8k", opts)
+map("n", "<S-j>", "8j", opts)
+map("n", "<S-h>", "^", opts) -- 跳到行首非空白字符
+-- map("n", "<S-h>", "0", opts) -- 跳到行首
 map("n", "<S-l>", "$", opts)
 
 -- 窗口大小缩放

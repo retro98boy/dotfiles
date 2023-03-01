@@ -89,6 +89,9 @@ make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/local -j12
 sudo make install
 ```
 
+Windows/MSYS2：
+MSYS2源不包含Neovim，可以去Neovim的github下载Windows安装包
+
 ## 安装本配置所需软件
 
 ArchLinux：
@@ -115,11 +118,19 @@ cargo install tree-sitter-cli
 sudo apt install nodejs npm git curl wget unzip tar gzip ripgrep make cmake
 ```
 
+Windows/MSYS2：
+
+```
+pacman -S mingw-w64-clang-x86_64-tree-sitter mingw-w64-clang-x86_64-nodejs git curl unzip tar gzip mingw-w64-clang-x86_64-ripgrep make cmake
+```
+
 ## 应用配置
 
 ```
 ln -svf ~/dotfiles/nvim_as_ide/.config/nvim ~/.config/nvim
 ```
+
+Windows平台，手动图形化创建快捷方式，使用PowerShell亦可
 
 # kitty
 

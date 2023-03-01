@@ -3,8 +3,8 @@ local lsp_opts = {}
 -- 针对当前缓冲区lsp加载后的按键映射
 lsp_opts.on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true }
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", ":Lspsaga peek_definition<CR>", opts) -- 转到定义，在窗口中
-	vim.api.nvim_buf_set_keymap(bufnr, "n", "gl", ":lua vim.lsp.buf.definition()<CR>", opts) -- 转到定义的位置
+	vim.api.nvim_buf_set_keymap(bufnr, "n", "gp", ":Lspsaga peek_definition<CR>", opts) -- 转到定义，在窗口中
+	vim.api.nvim_buf_set_keymap(bufnr, "n", "gd", ":lua vim.lsp.buf.definition()<CR>", opts) -- 转到定义的位置
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gD", ":lua vim.lsp.buf.declaration()<CR>", opts) -- 转到声明
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gr", ":Lspsaga lsp_finder<CR>", opts) -- 转到引用（包括定义）
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "gi", ":lua vim.lsp.buf.implementation()<CR>", opts)

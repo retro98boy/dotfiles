@@ -34,12 +34,17 @@ map("i", "<C-j>", "<Down>", opts)
 map("i", "<C-h>", "<Left>", opts)
 map("i", "<C-l>", "<Right>", opts)
 
--- 普通模式下光标快速移动
+-- 光标快速移动
 map("n", "<S-k>", "8k", opts)
 map("n", "<S-j>", "8j", opts)
 map("n", "<S-h>", "^", opts) -- 跳到行首非空白字符
 -- map("n", "<S-h>", "0", opts) -- 跳到行首
 map("n", "<S-l>", "$", opts)
+map("v", "<S-k>", "8k", opts)
+map("v", "<S-j>", "8j", opts)
+map("v", "<S-h>", "^", opts) -- 跳到行首非空白字符
+-- map("v", "<S-h>", "0", opts) -- 跳到行首
+map("v", "<S-l>", "$", opts)
 
 -- 窗口大小缩放
 map("n", "<C-Up>", ":resize -2<CR>", opts)
@@ -69,5 +74,6 @@ map("n", "<Leader>ef", ":NvimTreeFindFile<CR>", opts)
 -- telescope
 map("n", "<Leader>ff", ":Telescope find_files<CR>", opts)
 map("n", "<Leader>fg", ":Telescope live_grep<CR>", opts)
+map("n", "<Leader>fs", ":Telescope lsp_dynamic_workspace_symbols<CR>", opts)
 map("n", "<Leader>fb", ":Telescope buffers<CR>", opts)
 map("n", "<Leader>fh", ":Telescope help_tags<CR>", opts)

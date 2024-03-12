@@ -54,7 +54,7 @@ return {
       opts.outline_window = {
         width = 20,
       }
-      opts.outline_window.keymaps = {
+      opts.keymaps = {
         show_help = "?",
         close = { "<Esc>", "q" },
         goto_location = "<Cr>",
@@ -62,7 +62,7 @@ return {
         goto_and_close = "<S-Cr>",
         restore_location = "<C-g>",
         hover_symbol = "<C-space>",
-        toggle_preview = "K",
+        toggle_preview = "P",
         rename_symbol = "r",
         code_actions = "a",
         fold = "h",

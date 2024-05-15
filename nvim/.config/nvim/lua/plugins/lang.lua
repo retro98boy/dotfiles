@@ -52,6 +52,11 @@ return {
   },
 
   {
+    "mfussenegger/nvim-dap-python",
+    enabled = false,
+  },
+
+  {
     "mfussenegger/nvim-dap",
     opts = function()
       local dap = require("dap")

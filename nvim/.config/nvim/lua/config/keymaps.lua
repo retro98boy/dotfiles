@@ -31,14 +31,14 @@ map("n", "q", "<Nop>", opts)
 -- 光标快速移动
 map("n", "<S-k>", "10k", opts)
 map("n", "<S-j>", "10j", opts)
-map("n", "<S-h>", "^", opts) -- 跳到行首非空白字符
+-- map("n", "<S-h>", "^", opts) -- 跳到行首非空白字符
 -- map("n", "<S-h>", "0", opts) -- 跳到行首
-map("n", "<S-l>", "$", opts)
+-- map("n", "<S-l>", "$", opts)
 map("v", "<S-k>", "10k", opts)
 map("v", "<S-j>", "10j", opts)
-map("v", "<S-h>", "^", opts) -- 跳到行首非空白字符
+-- map("v", "<S-h>", "^", opts) -- 跳到行首非空白字符
 -- map("v", "<S-h>", "0", opts) -- 跳到行首
-map("v", "<S-l>", "$", opts)
+-- map("v", "<S-l>", "$", opts)
 
 -- 插入模式下移动光标
 map("i", "<C-k>", "<Up>", opts)

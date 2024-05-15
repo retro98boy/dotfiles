@@ -23,13 +23,13 @@ return {
     end,
   },
 
-  {
-    "akinsho/bufferline.nvim",
-    keys = {
-      { "<S-h>", false },
-      { "<S-l>", false },
-      { "<A-,>", "<cmd>BufferLineCyclePrev<cr>", mode = { "n", "i" }, desc = "Prev buffer" },
-      { "<A-.>", "<cmd>BufferLineCycleNext<cr>", mode = { "n", "i" }, desc = "Next buffer" },
-    },
-  },
+  -- {
+  --   "akinsho/bufferline.nvim",
+  --   keys = {
+  --     { "<S-h>", false },
+  --     -- { "<S-l>", false },
+  --     -- { "<A-,>", "<cmd>BufferLineCyclePrev<cr>", mode = { "n", "i" }, desc = "Prev buffer" },
+  --     -- { "<A-.>", "<cmd>BufferLineCycleNext<cr>", mode = { "n", "i" }, desc = "Next buffer" },
+  --   },
+  -- },
 }

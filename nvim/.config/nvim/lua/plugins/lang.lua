@@ -57,6 +57,11 @@ return {
   },
 
   {
+    "Civitasv/cmake-tools.nvim",
+    enabled = false,
+  },
+
+  {
     "mfussenegger/nvim-dap",
     opts = function()
       local dap = require("dap")

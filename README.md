@@ -151,3 +151,22 @@ Ubuntu：
 ```
 ln -svf ~/dotfiles/wezterm ~/.config
 ```
+
+# rofi
+
+# 安装rofi
+
+ArchLinux：
+
+```
+sudo pacman -S rofi-wayland
+```
+
+# 应用配置
+
+配置来自[adi1090x/rofi](https://github.com/adi1090x/rofi)
+
+```
+ln -svf ~/dotfiles/rofi ~/.config
+
+```

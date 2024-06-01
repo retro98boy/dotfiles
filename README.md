@@ -63,7 +63,7 @@ Ubuntu：
 ```
 ln -svf ~/dotfiles/zsh/.zshrc ~
 sh ~/dotfiles/zsh/install_plugins.sh
-ln -svf ~/dotfiles/starship/.config/starship.toml ~/.config
+ln -svf ~/dotfiles/starship/starship.toml ~/.config
 ```
 
 # nvim
@@ -103,7 +103,7 @@ sudo make install
 ## 应用配置
 
 ```
-ln -svf ~/dotfiles/nvim/.config/nvim ~/.config
+ln -svf ~/dotfiles/nvim ~/.config
 ```
 
 # kitty
@@ -129,7 +129,7 @@ or
 ## 应用配置
 
 ```
-ln -svf ~/dotfiles/kitty/.config/kitty ~/.config
+ln -svf ~/dotfiles/kitty ~/.config
 ```
 
 # wezterm
@@ -149,5 +149,5 @@ Ubuntu：
 ## 应用配置
 
 ```
-ln -svf ~/dotfiles/wezterm/.config/wezterm ~/.config
+ln -svf ~/dotfiles/wezterm ~/.config
 ```

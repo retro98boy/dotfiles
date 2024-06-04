@@ -82,44 +82,4 @@ return {
       },
     },
   },
-
-  {
-    "echasnovski/mini.comment",
-    enabled = false,
-  },
-
-  {
-    "numToStr/Comment.nvim",
-    event = "VeryLazy",
-    opts = {
-      -- 注释符号和注释之间加空格
-      padding = true,
-      -- 光标停留在原位
-      sticky = true,
-      -- 注释/取消注释时忽略的行
-      ignore = nil,
-      -- NORMAL模式下按键映射
-      toggler = {
-        line = "gcc",
-        block = "gbc",
-      },
-      -- O-PENDING模式下按键映射
-      opleader = {
-        line = "gc",
-        block = "gb",
-      },
-      -- 额外按键映射
-      extra = {
-        above = "gcO", -- 当前行上面添加注释
-        below = "gco", -- 当前行下面添加注释
-        eol = "gcA", -- 行尾添加注释
-      },
-      -- 按键绑定开关
-      mappings = {
-        basic = true, -- 如果为false，gcc gbc gc[count]{motion} gb[count]{motion}等按键不会工作
-        extra = true, -- 如果为false，gco, gcO, gcA等按键不会工作
-      },
-      pre_hook = require("ts_context_commentstring.integrations.comment_nvim").create_pre_hook(),
-    },
-  },
 }

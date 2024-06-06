@@ -1,9 +1,6 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
-    keys = {
-      { "<leader>ef", "<cmd>Neotree focus<cr>", desc = "Neotree focus" },
-    },
     opts = function(_, opts)
       if type(opts.window.mappings) == "table" then
         opts.window.mappings = vim.tbl_extend("force", opts.window.mappings, {
@@ -21,32 +18,6 @@ return {
       end
     end,
   },
-
-  -- {
-  --   "echasnovski/mini.bufremove",
-  --   keys = {
-  --     { "<leader>bd", false },
-  --     {
-  --       "<A-/>",
-  --       function()
-  --         local bd = require("mini.bufremove").delete
-  --         if vim.bo.modified then
-  --           local choice = vim.fn.confirm(("Save changes to %q?"):format(vim.fn.bufname()), "&Yes\n&No\n&Cancel")
-  --           if choice == 1 then -- Yes
-  --             vim.cmd.write()
-  --             bd(0)
-  --           elseif choice == 2 then -- No
-  --             bd(0, true)
-  --           end
-  --         else
-  --           bd(0)
-  --         end
-  --       end,
-  --       mode = { "n", "i" },
-  --       desc = "Delete Buffer",
-  --     },
-  --   },
-  -- },
 
   {
     "hedyhli/outline.nvim",

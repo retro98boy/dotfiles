@@ -1,31 +1,29 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
-    opts = function(_, opts)
-      if type(opts.window.mappings) == "table" then
-        opts.window.mappings = vim.tbl_extend("force", opts.window.mappings, {
+    opts = {
+      window = {
+        mappings = {
           ["o"] = "open",
-        })
-      end
-      if type(opts.filesystem) == "table" then
-        opts.filesystem = vim.tbl_extend("force", opts.filesystem, {
-          filtered_items = {
-            hide_dotfiles = false,
-            hide_gitignored = false,
-            hide_hidden = false, -- only works on Windows for hidden files/directories
-          },
-        })
-      end
-    end,
+        },
+      },
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false,
+          hide_gitignored = false,
+          hide_hidden = false, -- only works on Windows for hidden files/directories
+        },
+      },
+    },
   },
 
   {
     "hedyhli/outline.nvim",
-    opts = function(_, opts)
-      opts.outline_window = {
+    opts = {
+      outline_window = {
         width = 20,
-      }
-      opts.keymaps = {
+      },
+      keymaps = {
         show_help = "?",
         close = { "<Esc>", "q" },
         goto_location = "o",
@@ -45,9 +43,8 @@ return {
         fold_reset = "R",
         down_and_jump = "<C-j>",
         up_and_jump = "<C-k>",
-      }
-      return opts
-    end,
+      },
+    },
   },
 
   { "tenxsoydev/karen-yank.nvim", config = true },

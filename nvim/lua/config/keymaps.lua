@@ -10,38 +10,34 @@
 -- vim.g.maplocalleader = " "
 
 local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true }
+local opt = { noremap = true, silent = true }
 
--- 关闭LazyVim自带的悬浮终端快捷键
-map("n", "<Leader>ft", "<Nop>", opts)
-map("n", "<Leader>fT", "<Nop>", opts)
-map("n", "<C-/>", "<Nop>", opts)
-map("t", "<C-/>", "<Nop>", opts)
-map("t", "<C-k>", "<C-k>", opts)
-map("t", "<C-j>", "<C-j>", opts)
-map("t", "<C-h>", "<C-h>", opts)
-map("t", "<C-l>", "<C-l>", opts)
+-- 禁止打开lazyterm
+map("n", "<Leader>ft", "<Nop>", opt)
+map("n", "<Leader>fT", "<Nop>", opt)
+map("n", "<C-/>", "<Nop>", opt)
+map("n", "<C-_>", "<Nop>", opt)
 
-map("i", "jj", "<Esc>", opts)
+map("i", "jj", "<Esc>", opt)
 
 -- 使用Q代替q录制按键宏
-map("n", "<S-q>", "q", opts)
-map("n", "q", "<Nop>", opts)
+map("n", "<S-q>", "q", opt)
+map("n", "q", "<Nop>", opt)
 
 -- 光标快速移动
-map("n", "<S-k>", "10k", opts)
-map("n", "<S-j>", "10j", opts)
--- map("n", "<S-h>", "^", opts) -- 跳到行首非空白字符
--- map("n", "<S-h>", "0", opts) -- 跳到行首
--- map("n", "<S-l>", "$", opts)
-map("v", "<S-k>", "10k", opts)
-map("v", "<S-j>", "10j", opts)
--- map("v", "<S-h>", "^", opts) -- 跳到行首非空白字符
--- map("v", "<S-h>", "0", opts) -- 跳到行首
--- map("v", "<S-l>", "$", opts)
+map("n", "<S-k>", "10k", opt)
+map("n", "<S-j>", "10j", opt)
+-- map("n", "<S-h>", "^", opt) -- 跳到行首非空白字符
+-- map("n", "<S-h>", "0", opt) -- 跳到行首
+-- map("n", "<S-l>", "$", opt)
+map("v", "<S-k>", "10k", opt)
+map("v", "<S-j>", "10j", opt)
+-- map("v", "<S-h>", "^", opt) -- 跳到行首非空白字符
+-- map("v", "<S-h>", "0", opt) -- 跳到行首
+-- map("v", "<S-l>", "$", opt)
 
 -- 插入模式下移动光标
-map("i", "<C-k>", "<Up>", opts)
-map("i", "<C-j>", "<Down>", opts)
-map("i", "<C-h>", "<Left>", opts)
-map("i", "<C-l>", "<Right>", opts)
+map("i", "<C-k>", "<Up>", opt)
+map("i", "<C-j>", "<Down>", opt)
+map("i", "<C-h>", "<Left>", opt)
+map("i", "<C-l>", "<Right>", opt)

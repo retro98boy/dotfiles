@@ -187,4 +187,13 @@ local config = {
 	},
 }
 
+if is_windows() then
+	config.launch_menu = {
+		{
+			label = "MSYS2 UCRT64",
+			args = { "C:/msys64/msys2_shell.cmd", "-defterm", "-here", "-no-start", "-ucrt64" },
+		},
+	}
+end
+
 return config

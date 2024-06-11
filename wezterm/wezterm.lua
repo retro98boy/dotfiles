@@ -15,7 +15,8 @@ local default_shell = function()
 	if is_linux() then
 		return { "zsh" }
 	elseif is_windows() then
-		return { "pwsh" }
+		return { "zsh" }
+		-- return { "pwsh" }
 	end
 end
 
@@ -90,10 +91,17 @@ local config = {
 	default_cursor_style = "BlinkingBar",
 
 	-- 字体
-	font = wezterm.font("FiraCode Nerd Font", { weight = "Regular", italic = false }),
+	font = wezterm.font_with_fallback({
+		{
+			family = "FiraCode Nerd Font Mono",
+			weight = "Regular",
+			italic = false,
+			-- https://wezfurlong.org/wezterm/config/font-shaping.html#advanced-font-shaping-options
+			harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
+		},
+		"Noto Sans CJK SC",
+	}),
 	font_size = 11.2,
-	-- https://wezfurlong.org/wezterm/config/font-shaping.html#advanced-font-shaping-options
-	harfbuzz_features = { "calt=0", "clig=0", "liga=0" },
 
 	-- 配色
 	color_scheme = "Cobalt2",

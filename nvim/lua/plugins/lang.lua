@@ -1,54 +1,20 @@
 return {
   {
     "neovim/nvim-lspconfig",
-    -- 禁止自动安装
-    opts = {
-      servers = {
-        clangd = {
-          mason = false,
-        },
-        neocmake = {
-          mason = false,
-        },
-        jsonls = {
-          mason = false,
-        },
-        lua_ls = {
-          mason = false,
-        },
-        marksman = {
-          mason = false,
-        },
-        pyright = {
-          mason = false,
-        },
-        ruff_lsp = {
-          mason = false,
-        },
-        rust_analyzer = {
-          mason = false,
-        },
-        taplo = {
-          mason = false,
-        },
-        yamlls = {
-          mason = false,
-        },
-        bufls = {
-          mason = false,
-          cmd = { "bufls", "serve" },
-          filetypes = { "proto" },
-        },
-      },
-    },
+    opts = function(_, opts)
+      -- 禁止自动安装
+      for server, server_opts in pairs(opts.servers) do
+        server_opts.mason = false
+      end
+    end,
   },
 
   {
     "williamboman/mason.nvim",
-    opts = {
+    opts = function(_, opts)
       -- 禁止自动安装
-      ensure_installed = {},
-    },
+      opts.ensure_installed = {}
+    end,
   },
 
   {
@@ -69,7 +35,13 @@ return {
         dap.adapters["cppdbg"] = {
           id = "cppdbg",
           type = "executable",
-          -- command = "/absolute/path/to/cpptools/extension/debugAdapters/bin/OpenDebugAD7",
+          -- linux
+          command = "/home/zhenlin/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7",
+          -- windows
+          -- command = "C:\\Users\\zhenlin\\AppData\\Local\\nvim-data\\mason\\packages\\cpptools\\extension\\debugAdapters\\bin\\OpenDebugAD7.exe",
+          -- options = {
+          --   detached = false,
+          -- },
         }
       end
       for _, lang in ipairs({ "c", "cpp" }) do

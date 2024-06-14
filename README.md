@@ -61,9 +61,9 @@ Ubuntu：
 ## 应用配置
 
 ```
-ln -svf ~/dotfiles/zsh/.zshrc ~
+ln -svf ~/dotfiles/zsh/.zshrc ~; \
+ln -svf ~/dotfiles/starship/starship.toml ~/.config; \
 sh ~/dotfiles/zsh/install_plugins.sh
-ln -svf ~/dotfiles/starship/starship.toml ~/.config
 ```
 
 # nvim
@@ -154,7 +154,7 @@ ln -svf ~/dotfiles/wezterm ~/.config
 
 # hyprland
 
-# 安装hyprland及其它工具
+## 安装hyprland及其它工具
 
 ArchLinux：
 
@@ -166,7 +166,7 @@ pavucontrol network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard
 ```
 
-# 应用配置
+## 应用配置
 
 ```
 ln -svf ~/dotfiles/hyprland/hypr ~/.config; \

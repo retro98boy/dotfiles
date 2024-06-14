@@ -159,7 +159,7 @@ ln -svf ~/dotfiles/wezterm ~/.config
 ArchLinux：
 
 ```
-sudo pacman -S hyprland hyprlock hypridle
+sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 
 sudo pacman -S rofi-wayland waybar swaync swww \
 pavucontrol network-manager-applet blueman \

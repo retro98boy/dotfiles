@@ -174,8 +174,11 @@ gvfs-smb gvfs-nfs gvfs-mtp
 
 ```
 ln -svf ~/dotfiles/hyprland/hypr ~/.config; \
-ln -svf ~/dotfiles/hyprland/rofi ~/.config
+ln -svf ~/dotfiles/hyprland/rofi ~/.config \
+ln -svf ~/dotfiles/hyprland/swaync ~/.config
 
 ```
 
 rofi配置来自[adi1090x/rofi](https://github.com/adi1090x/rofi)
+
+swaync配置来自[JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)

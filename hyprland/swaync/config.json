@@ -76,7 +76,7 @@
                 },
                 {
                     "label": "󰀝",
-                    "command": "bash -c $HOME/.config/hypr/scripts/airplane_mode.sh"
+                    "command": "bash -c $HOME/.config/hypr/scripts/AirplaneMode.sh"
                 },
                 {
                     "label": "󰝟",

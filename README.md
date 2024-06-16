@@ -162,12 +162,11 @@ ArchLinux：
 sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 
 sudo pacman -S rofi-wayland waybar swaync swww \
-pavucontrol network-manager-applet blueman \
+pavucontrol wireplumber network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard
 
-sudo pacman -S kitty \
-thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman \
-gvfs-smb gvfs-nfs gvfs-mtp
+sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs-smb gvfs-nfs gvfs-mtp file-roller \
+kitty
 ```
 
 ## 应用配置

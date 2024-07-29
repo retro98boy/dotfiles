@@ -172,6 +172,7 @@ sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 sudo pacman -S rofi-wayland waybar swaync swww \
 brightnessctl pamix pavucontrol wireplumber network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard \
+polkit-gnome \
 ttf-jetbrains-mono-nerd
 
 sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs-smb gvfs-nfs gvfs-mtp file-roller \

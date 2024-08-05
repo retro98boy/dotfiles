@@ -527,6 +527,7 @@
 	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
 	"tooltip-format": "{icon} {desc} | {volume}%",
 	"smooth-scrolling-threshold": 1,
+	"reverse-scrolling": true,
 },
 "pulseaudio#1": {
   "format": "{icon} {volume}%",
@@ -557,6 +558,7 @@
 	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --mic-dec",
 	"tooltip-format": "{source_desc} | {source_volume}%",
 	"scroll-step": 5,
+	"reverse-scrolling": true,
 },
 "temperature": {
 	"interval": 10,
@@ -816,6 +818,7 @@
 	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
 	"tooltip-format": "{icon} {desc} | {volume}%",
 	"smooth-scrolling-threshold": 1,
+	"reverse-scrolling": true,
 },
 "pulseaudio#microphone_vertical": {
 	"format": "{format_source}",
@@ -828,6 +831,7 @@
 	"max-volume": 100,
 	"tooltip": true,
 	"tooltip-format": "{source_desc} | {source_volume}%",
+	"reverse-scrolling": true,
 },
 "temperature#vertical": {
 	"interval": 10,

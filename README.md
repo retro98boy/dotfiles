@@ -170,7 +170,7 @@ ArchLinux：
 sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 
 sudo pacman -S rofi-wayland waybar swaync swww \
-brightnessctl pamix pavucontrol wireplumber network-manager-applet blueman \
+brightnessctl pamixer pavucontrol wireplumber network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard \
 polkit-gnome \
 ttf-jetbrains-mono-nerd
@@ -183,8 +183,8 @@ kitty
 
 ```
 ln -svf ~/dotfiles/hyprland/hypr ~/.config; \
-ln -svf ~/dotfiles/hyprland/rofi ~/.config \
-ln -svf ~/dotfiles/hyprland/swaync ~/.config \
+ln -svf ~/dotfiles/hyprland/rofi ~/.config; \
+ln -svf ~/dotfiles/hyprland/swaync ~/.config; \
 ln -svf ~/dotfiles/hyprland/waybar ~/.config
 
 ```

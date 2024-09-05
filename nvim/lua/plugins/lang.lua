@@ -31,10 +31,11 @@ return {
     "mfussenegger/nvim-dap",
     -- stylua: ignore
     keys = {
-      { "<F8>", function() require("dap").continue() end, desc = "Continue" },
-      { "<F6>", function() require("dap").step_over() end, desc = "Step Over" },
       { "<F5>", function() require("dap").step_into() end, desc = "Step Into" },
+      { "<F6>", function() require("dap").step_over() end, desc = "Step Over" },
       { "<F7>", function() require("dap").step_out() end, desc = "Step Out" },
+      { "<F8>", function() require("dap").continue() end, desc = "Continue" },
+      { "<F9>", function() require("dap").pause() end, desc = "Pause" },
     },
     opts = function()
       local dap = require("dap")

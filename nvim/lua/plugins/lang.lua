@@ -43,14 +43,14 @@ return {
         dap.adapters["cppdbg"] = {
           id = "cppdbg",
           type = "executable",
-          -- linux
-          command = "/home/zhenlin/.local/share/nvim/mason/packages/cpptools/extension/debugAdapters/bin/OpenDebugAD7",
-          -- windows
-          -- command = "C:\\Users\\zhenlin\\AppData\\Local\\nvim-data\\mason\\packages\\cpptools\\extension\\debugAdapters\\bin\\OpenDebugAD7.exe",
-          -- options = {
-          --   detached = false,
-          -- },
+          command = vim.fn.exepath("OpenDebugAD7"),
         }
+
+        if vim.fn.has("win32") == 1 then
+          dap.adapters.cppdbg.options = {
+            detached = false,
+          }
+        end
       end
       for _, lang in ipairs({ "c", "cpp" }) do
         if type(dap.configurations[lang]) == "table" then

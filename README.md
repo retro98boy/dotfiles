@@ -40,29 +40,10 @@ make check
 sudo make install
 ```
 
-## 安装starship
-
-ArchLinux：
-
-```
-sudo pacman -S starship
-```
-
-Termux：
-
-```
-apt install starship
-```
-
-Ubuntu：
-
-从starship的[github](https://github.com/starship/starship)的Releases界面下载最新的二进制包，解压到~/.local/bin或者/usr/local/bin
-
 ## 应用配置
 
 ```
 ln -svf ~/dotfiles/zsh/.zshrc ~; \
-ln -svf ~/dotfiles/starship/starship.toml ~/.config; \
 sh ~/dotfiles/zsh/install_plugins.sh
 ```
 

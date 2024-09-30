@@ -113,5 +113,6 @@ bindkey '^[[1;5B' history-substring-search-down    # Ctrl+下箭头
 source $ZSH_PLUGIN_PATH/sudo/sudo.plugin.zsh
 
 
-# starship prompt
-eval "$(starship init zsh)"
+# pure prompt
+source $ZSH_PLUGIN_PATH/pure/async.zsh
+source $ZSH_PLUGIN_PATH/pure/pure.zsh

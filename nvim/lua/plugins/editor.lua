@@ -2,7 +2,7 @@ return {
   {
     "nvim-neo-tree/neo-tree.nvim",
     keys = {
-      { "<leader>ef", "<cmd>Neotree focus<cr>", desc = "Neotree focus" },
+      { "<leader>ee", "<cmd>Neotree focus<cr>", desc = "Neotree focus" },
     },
     opts = {
       window = {

@@ -151,13 +151,15 @@ ArchLinux：
 sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 
 sudo pacman -S wofi waybar swaync swww \
-brightnessctl pamixer pavucontrol wireplumber network-manager-applet blueman \
+nwg-look brightnessctl pamixer pavucontrol wireplumber network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard \
 polkit-gnome \
 ttf-jetbrains-mono-nerd
 
-sudo pacman -S thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman gvfs-smb gvfs-nfs gvfs-mtp file-roller \
+sudo pacman -S nautilus nautilus-checksums nautilus-image-converter nautilus-metadata-editor nautilus-share gvfs-smb gvfs-nfs gvfs-mtp file-roller \
 kitty
+paru -S nautilus-open-any-terminal
+gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 
 ## 应用配置

@@ -150,7 +150,7 @@ ArchLinux：
 ```
 sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
 
-sudo pacman -S rofi-wayland waybar swaync swww \
+sudo pacman -S wofi waybar swaync swww \
 brightnessctl pamixer pavucontrol wireplumber network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard \
 polkit-gnome \
@@ -164,13 +164,10 @@ kitty
 
 ```
 ln -svf ~/dotfiles/hyprland/hypr ~/.config; \
-ln -svf ~/dotfiles/hyprland/rofi ~/.config; \
+ln -svf ~/dotfiles/hyprland/wofi ~/.config; \
 ln -svf ~/dotfiles/hyprland/swaync ~/.config; \
 ln -svf ~/dotfiles/hyprland/waybar ~/.config
-
 ```
-
-rofi配置来自[adi1090x/rofi](https://github.com/adi1090x/rofi)
 
 swaync配置来自[JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)
 

@@ -40,7 +40,6 @@ opt.shiftwidth = 2 -- 缩进宽度，单位为空格，由expandtab决定缩进�
 opt.smartindent = true -- 开启智能缩进
 opt.clipboard = "unnamedplus" -- 同步系统剪切板
 opt.fileencodings = "utf-8, gb18030, gbk, gb2312, cp936, big5, euc-jp, euc-kr, latin1" -- 打开文件时尝试使用的编码
-opt.fileencoding = "utf-8" -- 优先utf-8编码
 opt.termguicolors = true -- 开启真彩色
 opt.updatetime = 300 -- 300ms没有输入就更新磁盘上的交换文件
 opt.timeoutlen = 300 -- 300ms没有按键继续输入便认为此次输入完成

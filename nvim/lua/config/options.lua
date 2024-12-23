@@ -51,6 +51,6 @@ opt.foldmethod = "expr" -- 基于nvim-treesitter折叠文本
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 opt.foldenable = false -- 默认不要折叠
 opt.foldlevel = 99
-opt.completeopt = "menu,menuone,noselect"
+-- opt.completeopt = "menu,menuone,noselect"
 
 vim.g.autoformat = false -- 禁止保存时自动格式化

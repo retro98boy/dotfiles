@@ -2,9 +2,9 @@
 cd ~ && git clone https://github.com/retro98boy/dotfiles.git
 ```
 
-# zsh
+# Zsh
 
-## 安装zsh
+## 安装Zsh
 
 ArchLinux：
 
@@ -47,9 +47,9 @@ ln -svf ~/dotfiles/zsh/.zshrc ~; \
 sh ~/dotfiles/zsh/install_plugins.sh
 ```
 
-# nvim
+# Neovim
 
-## 安装nvim
+## 安装Neovim
 
 ArchLinux：
 
@@ -121,9 +121,19 @@ or
 ln -svf ~/dotfiles/kitty ~/.config
 ```
 
-# hyprland
+# Windows Terminal
 
-## 安装hyprland及其它工具
+## 安装Windows Terminal
+
+从[此处](https://github.com/microsoft/terminal/releases)下载安装包安装即可
+
+## 应用配置
+
+将`dotfiles/windows_terminal`下的文件全部复制到`%UserProfile%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`即可
+
+# Hyprland
+
+## 安装Hyprland及其它工具
 
 ArchLinux：
 
@@ -149,7 +159,3 @@ ln -svf ~/dotfiles/hyprland/wofi ~/.config; \
 ln -svf ~/dotfiles/hyprland/swaync ~/.config; \
 ln -svf ~/dotfiles/hyprland/waybar ~/.config
 ```
-
-swaync配置来自[JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)
-
-waybar配置基于[JaKooLit/Hyprland-Dots](https://github.com/JaKooLit/Hyprland-Dots)

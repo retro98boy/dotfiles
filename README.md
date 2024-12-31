@@ -121,26 +121,6 @@ or
 ln -svf ~/dotfiles/kitty ~/.config
 ```
 
-# wezterm
-
-## 安装wezterm
-
-ArchLinux：
-
-```
-sudo pacman -S wezterm
-```
-
-Ubuntu：
-
-从wezterm的[github](https://github.com/wez/wezterm)的Releases界面下载最新的deb手动安装
-
-## 应用配置
-
-```
-ln -svf ~/dotfiles/wezterm ~/.config
-```
-
 # hyprland
 
 ## 安装hyprland及其它工具
@@ -157,8 +137,7 @@ polkit-gnome \
 ttf-jetbrains-mono-nerd
 
 sudo pacman -S nautilus nautilus-checksums nautilus-image-converter nautilus-metadata-editor nautilus-share gvfs-smb gvfs-nfs gvfs-mtp file-roller \
-kitty
-paru -S nautilus-open-any-terminal
+kitty archlinuxcn/nautilus-open-any-terminal
 gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 

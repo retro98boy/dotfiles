@@ -54,3 +54,4 @@ opt.foldlevel = 99
 -- opt.completeopt = "menu,menuone,noselect"
 
 vim.g.autoformat = false -- 禁止保存时自动格式化
+vim.g.snacks_animate = false

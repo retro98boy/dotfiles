@@ -121,6 +121,22 @@ or
 ln -svf ~/dotfiles/kitty ~/.config
 ```
 
+# Ghostty
+
+## 安装Ghostty
+
+ArchLinux：
+
+```
+sudo pacman -S ghostty
+```
+
+## 应用配置
+
+```
+ln -svf ~/dotfiles/ghostty ~/.config
+```
+
 # Windows Terminal
 
 ## 安装Windows Terminal

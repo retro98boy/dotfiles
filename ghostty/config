@@ -1,0 +1,44 @@
+# 字体
+# ghostty +list-fonts
+font-family = FiraCode Nerd Font Mono
+# 禁用连字
+font-feature = -calt
+cursor-click-to-move = true
+mouse-hide-while-typing = true
+
+# 标签栏
+window-decoration = false
+window-new-tab-position = current
+
+# 剪贴板
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+
+# 按键绑定
+# ghostty +list-actions
+keybind = ctrl+shift+t=new_tab
+
+keybind = ctrl+shift+,=previous_tab
+keybind = ctrl+shift+.=next_tab
+
+keybind = ctrl+shift+alt+,=move_tab:-1
+keybind = ctrl+shift+alt+.=move_tab:1
+
+# keybind = ctrl+shift+/=close_tab
+
+keybind = ctrl+shift+\=new_split:right
+keybind = ctrl+shift+_=new_split:down
+
+keybind = ctrl+shift+]=goto_split:next
+keybind = ctrl+shift+[=goto_split:previous
+
+keybind = ctrl+shift+up=resize_split:up,10
+keybind = ctrl+shift+down=resize_split:down,10
+keybind = ctrl+shift+left=resize_split:left,10
+keybind = ctrl+shift+right=resize_split:right,10
+keybind = ctrl+shift+home=equalize_splits
+
+keybind = ctrl+shift+q=quit
+
+keybind = alt+enter=toggle_fullscreen

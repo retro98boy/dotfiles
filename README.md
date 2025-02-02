@@ -87,14 +87,6 @@ sudo make install
 ln -svf ~/dotfiles/nvim ~/.config
 ```
 
-# clangd
-
-## 应用配置
-
-```
-ln -svf ~/dotfiles/clangd ~/.config
-```
-
 # kitty
 
 ## 安装kitty

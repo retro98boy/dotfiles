@@ -480,7 +480,7 @@
                 "source": "Windows.Terminal.Azure"
             },
             {
-                "colorScheme": "Cobalt2",
+                "colorScheme": "MaterialDesignColors",
                 "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64",
                 "font": 
                 {
@@ -494,7 +494,7 @@
                 "startingDirectory": "%USERPROFILE%"
             },
             {
-                "colorScheme": "Cobalt2",
+                "colorScheme": "MaterialDesignColors",
                 "commandline": "C:/msys64/usr/bin/zsh.exe",
                 "font": 
                 {
@@ -512,27 +512,27 @@
     "schemes": 
     [
         {
-            "background": "#193549",
-            "black": "#000000",
-            "blue": "#1478DB",
-            "brightBlack": "#808080",
-            "brightBlue": "#1478DB",
-            "brightCyan": "#00FFFF",
-            "brightGreen": "#33FF00",
-            "brightPurple": "#CC00FF",
-            "brightRed": "#FF0000",
-            "brightWhite": "#FFFFFF",
-            "brightYellow": "#FFFF00",
-            "cursorColor": "#FFFFFF",
-            "cyan": "#00C5C7",
-            "foreground": "#C7C7C7",
-            "green": "#3AD900",
-            "name": "Cobalt2",
-            "purple": "#FF2C70",
-            "red": "#FF2600",
-            "selectionBackground": "#FFFFFF",
-            "white": "#C7C7C7",
-            "yellow": "#FFC600"
+            "black": "#435b67",
+            "brightBlack": "#a1b0b8",
+            "red": "#fc3841",
+            "brightRed": "#fc746d",
+            "green": "#5cf19e",
+            "brightGreen": "#adf7be",
+            "yellow": "#fed032",
+            "brightYellow": "#fee16c",
+            "cyan": "#37b6ff",
+            "brightCyan": "#70cfff",
+            "purple": "#fc226e",
+            "brightPurple": "#fc669b",
+            "blue": "#59ffd1",
+            "brightBlue": "#9affe6",
+            "white": "#ffffff",
+            "brightWhite": "#ffffff",
+            "background": "#1d262a",
+            "selectionBackground": "#4e6a78",
+            "foreground": "#e7ebed",
+            "cursorColor": "#eaeaea",
+            "name": "MaterialDesignColors"
         }
     ],
     "showTabsInTitlebar": true,

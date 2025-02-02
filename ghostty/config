@@ -16,6 +16,10 @@ clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 
+# 主题
+# ghostty +list-themes
+theme = MaterialDesignColors
+
 # 按键绑定
 # ghostty +list-actions
 keybind = ctrl+shift+t=new_tab

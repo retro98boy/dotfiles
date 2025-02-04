@@ -137,7 +137,7 @@ ln -svf ~/dotfiles/ghostty ~/.config
 
 ## 应用配置
 
-将`dotfiles/windows_terminal`下的文件全部复制到`%UserProfile%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`即可
+将`dotfiles/windows_terminal`下的文件全部复制到`%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`即可
 
 # Hyprland
 

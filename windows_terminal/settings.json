@@ -512,6 +512,11 @@
     "schemes": 
     [
         {
+            "name": "MaterialDesignColors",
+            "foreground": "#e7ebed",
+            "background": "#1d262a",
+            "selectionBackground": "#4e6a78",
+            "cursorColor": "#eaeaea",
             "black": "#435b67",
             "brightBlack": "#a1b0b8",
             "red": "#fc3841",
@@ -520,19 +525,14 @@
             "brightGreen": "#adf7be",
             "yellow": "#fed032",
             "brightYellow": "#fee16c",
-            "cyan": "#37b6ff",
-            "brightCyan": "#70cfff",
+            "blue": "#37b6ff",
+            "brightBlue": "#70cfff",
             "purple": "#fc226e",
             "brightPurple": "#fc669b",
-            "blue": "#59ffd1",
-            "brightBlue": "#9affe6",
+            "cyan": "#59ffd1",
+            "brightCyan": "#9affe6",
             "white": "#ffffff",
-            "brightWhite": "#ffffff",
-            "background": "#1d262a",
-            "selectionBackground": "#4e6a78",
-            "foreground": "#e7ebed",
-            "cursorColor": "#eaeaea",
-            "name": "MaterialDesignColors"
+            "brightWhite": "#ffffff"
         }
     ],
     "showTabsInTitlebar": true,

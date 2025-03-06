@@ -4,23 +4,6 @@
     "actions": 
     [
         {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "forward"
-            },
-            "id": "User.moveTab.793E2350",
-            "keys": "ctrl+alt+shift+period"
-        },
-        {
-            "command": 
-            {
-                "action": "copy",
-                "singleLine": false
-            },
-            "id": "User.copy.644BA8F2"
-        },
-        {
             "command": "unbound",
             "keys": "ctrl+shift+tab"
         },
@@ -231,20 +214,32 @@
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "up"
+                "action": "copy",
+                "singleLine": false
             },
-            "id": "User.resizePane.6CD791B",
-            "keys": "ctrl+shift+up"
+            "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
+            },
+            "id": "User.moveTab.793E2350",
+            "keys": "ctrl+alt+shift+period"
         },
         {
             "command": "paste",
             "id": "User.paste"
         },
         {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "command": 
+            {
+                "action": "resizePane",
+                "direction": "up"
+            },
+            "id": "User.resizePane.6CD791B",
+            "keys": "ctrl+shift+up"
         },
         {
             "command": 
@@ -254,6 +249,11 @@
             },
             "id": "User.resizePane.2A0DA8E0",
             "keys": "ctrl+shift+left"
+        },
+        {
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -291,6 +291,11 @@
             "keys": "ctrl+shift+comma"
         },
         {
+            "command": "closeWindow",
+            "id": "User.closeWindow",
+            "keys": "ctrl+shift+q"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -300,17 +305,28 @@
             "keys": "ctrl+shift+minus"
         },
         {
-            "command": "closeWindow",
-            "id": "User.closeWindow",
-            "keys": "ctrl+shift+q"
-        },
-        {
             "command": 
             {
                 "action": "nextTab"
             },
             "id": "User.nextTab.0",
             "keys": "ctrl+shift+period"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "id": "User.moveFocus.87C324ED",
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane"
+            },
+            "id": "User.splitPane.91AB55B1"
         },
         {
             "command": 
@@ -328,22 +344,6 @@
             },
             "id": "User.closeTab.0",
             "keys": "ctrl+shift+/"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "id": "User.moveFocus.87C324ED",
-            "keys": "ctrl+shift+l"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane"
-            },
-            "id": "User.splitPane.91AB55B1"
         },
         {
             "command": "openTabRenamer",
@@ -446,7 +446,7 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{56bdcc31-0239-49d4-8ed4-b7114a20099a}",
+    "defaultProfile": "{fede3c85-c2c2-466e-8d96-aa5594d0eccc}",
     "disableAnimations": true,
     "focusFollowMouse": true,
     "newTabMenu": 
@@ -492,47 +492,33 @@
                 "padding": "0",
                 "scrollbarState": "hidden",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "colorScheme": "MaterialDesignColors",
-                "commandline": "C:/msys64/usr/bin/zsh.exe",
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono"
-                },
-                "guid": "{56bdcc31-0239-49d4-8ed4-b7114a20099a}",
-                "hidden": false,
-                "name": "Zsh",
-                "padding": "0",
-                "scrollbarState": "hidden",
-                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
     "schemes": 
     [
         {
+            "background": "#1D262A",
+            "black": "#435B67",
+            "blue": "#37B6FF",
+            "brightBlack": "#A1B0B8",
+            "brightBlue": "#70CFFF",
+            "brightCyan": "#9AFFE6",
+            "brightGreen": "#ADF7BE",
+            "brightPurple": "#FC669B",
+            "brightRed": "#FC746D",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FEE16C",
+            "cursorColor": "#EAEAEA",
+            "cyan": "#59FFD1",
+            "foreground": "#E7EBED",
+            "green": "#5CF19E",
             "name": "MaterialDesignColors",
-            "foreground": "#e7ebed",
-            "background": "#1d262a",
-            "selectionBackground": "#4e6a78",
-            "cursorColor": "#eaeaea",
-            "black": "#435b67",
-            "brightBlack": "#a1b0b8",
-            "red": "#fc3841",
-            "brightRed": "#fc746d",
-            "green": "#5cf19e",
-            "brightGreen": "#adf7be",
-            "yellow": "#fed032",
-            "brightYellow": "#fee16c",
-            "blue": "#37b6ff",
-            "brightBlue": "#70cfff",
-            "purple": "#fc226e",
-            "brightPurple": "#fc669b",
-            "cyan": "#59ffd1",
-            "brightCyan": "#9affe6",
-            "white": "#ffffff",
-            "brightWhite": "#ffffff"
+            "purple": "#FC226E",
+            "red": "#FC3841",
+            "selectionBackground": "#4E6A78",
+            "white": "#FFFFFF",
+            "yellow": "#FED032"
         }
     ],
     "showTabsInTitlebar": true,

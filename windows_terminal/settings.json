@@ -4,6 +4,23 @@
     "actions": 
     [
         {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "forward"
+            },
+            "id": "User.moveTab.793E2350",
+            "keys": "ctrl+alt+shift+period"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "id": "User.copy.644BA8F2"
+        },
+        {
             "command": "unbound",
             "keys": "ctrl+shift+tab"
         },
@@ -214,32 +231,20 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
+                "action": "resizePane",
+                "direction": "up"
             },
-            "id": "User.copy.644BA8F2"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "forward"
-            },
-            "id": "User.moveTab.793E2350",
-            "keys": "ctrl+alt+shift+period"
+            "id": "User.resizePane.6CD791B",
+            "keys": "ctrl+shift+up"
         },
         {
             "command": "paste",
             "id": "User.paste"
         },
         {
-            "command": 
-            {
-                "action": "resizePane",
-                "direction": "up"
-            },
-            "id": "User.resizePane.6CD791B",
-            "keys": "ctrl+shift+up"
+            "command": "find",
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -249,11 +254,6 @@
             },
             "id": "User.resizePane.2A0DA8E0",
             "keys": "ctrl+shift+left"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -291,11 +291,6 @@
             "keys": "ctrl+shift+comma"
         },
         {
-            "command": "closeWindow",
-            "id": "User.closeWindow",
-            "keys": "ctrl+shift+q"
-        },
-        {
             "command": 
             {
                 "action": "splitPane",
@@ -305,28 +300,17 @@
             "keys": "ctrl+shift+minus"
         },
         {
+            "command": "closeWindow",
+            "id": "User.closeWindow",
+            "keys": "ctrl+shift+q"
+        },
+        {
             "command": 
             {
                 "action": "nextTab"
             },
             "id": "User.nextTab.0",
             "keys": "ctrl+shift+period"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "id": "User.moveFocus.87C324ED",
-            "keys": "ctrl+shift+l"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane"
-            },
-            "id": "User.splitPane.91AB55B1"
         },
         {
             "command": 
@@ -344,6 +328,22 @@
             },
             "id": "User.closeTab.0",
             "keys": "ctrl+shift+/"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "id": "User.moveFocus.87C324ED",
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "command": 
+            {
+                "action": "splitPane"
+            },
+            "id": "User.splitPane.91AB55B1"
         },
         {
             "command": "openTabRenamer",
@@ -481,7 +481,7 @@
             },
             {
                 "colorScheme": "MaterialDesignColors",
-                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64",
+                "commandline": "C:/msys64/msys2_shell.cmd -ucrt64 -defterm -here -use-full-path -no-start -shell zsh",
                 "font": 
                 {
                     "face": "FiraCode Nerd Font Mono"

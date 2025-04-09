@@ -44,7 +44,7 @@ sudo make install
 
 ```
 ln -svf ~/dotfiles/zsh/.zshrc ~; \
-sh ~/dotfiles/zsh/install_plugins.sh
+sh ~/dotfiles/zsh/install-plugins.sh
 ```
 
 # Neovim
@@ -121,7 +121,7 @@ ln -svf ~/dotfiles/ghostty ~/.config
 
 ## 应用配置
 
-将`dotfiles/windows_terminal`下的文件全部复制到`%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`即可
+将`dotfiles/windows-terminal`下的文件全部复制到`%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`即可
 
 # Niri
 
@@ -147,6 +147,5 @@ gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ```
 ln -svf ~/dotfiles/niri ~/.config; \
 ln -svf ~/dotfiles/wofi ~/.config; \
-ln -svf ~/dotfiles/swaync ~/.config; \
 ln -svf ~/dotfiles/waybar ~/.config
 ```

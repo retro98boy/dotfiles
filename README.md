@@ -65,12 +65,6 @@ apt install neovim
 
 Ubuntu：
 
-```
-sudo apt install neovim
-```
-
-or
-
 手动下载最新的[源码](https://github.com/neovim/neovim)编译安装
 
 ```
@@ -96,16 +90,6 @@ ArchLinux：
 ```
 sudo pacman -S kitty
 ```
-
-Ubuntu：
-
-```
-sudo apt install kitty
-```
-
-or
-
-从kitty的[github](https://github.com/kovidgoyal/kitty)的Releases界面下载最新的`Linux amd64 binary bundle`，解压到~/.local或者/usr/local
 
 ## 应用配置
 
@@ -139,19 +123,18 @@ ln -svf ~/dotfiles/ghostty ~/.config
 
 将`dotfiles/windows_terminal`下的文件全部复制到`%USERPROFILE%\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState`即可
 
-# Hyprland
+# Niri
 
-## 安装Hyprland及其它工具
+## 安装Niri及其它工具
 
 ArchLinux：
 
 ```
-sudo pacman -S hyprland hyprlock hypridle xdg-desktop-portal-hyprland
+sudo pacman -S niri xwayland-satellite xdg-desktop-portal-gtk xdg-desktop-portal-gnome gnome-keyring polkit-gnome
 
 sudo pacman -S wofi waybar swaync swww \
 nwg-look brightnessctl pamixer pavucontrol wireplumber network-manager-applet blueman \
 fcitx5-im fcitx5-rime wl-clipboard \
-polkit-gnome \
 ttf-jetbrains-mono-nerd
 
 sudo pacman -S nautilus nautilus-checksums nautilus-image-converter nautilus-metadata-editor nautilus-share gvfs-smb gvfs-nfs gvfs-mtp file-roller \
@@ -162,8 +145,8 @@ gsettings set com.github.stunkymonkey.nautilus-open-any-terminal terminal kitty
 ## 应用配置
 
 ```
-ln -svf ~/dotfiles/hyprland/hypr ~/.config; \
-ln -svf ~/dotfiles/hyprland/wofi ~/.config; \
-ln -svf ~/dotfiles/hyprland/swaync ~/.config; \
-ln -svf ~/dotfiles/hyprland/waybar ~/.config
+ln -svf ~/dotfiles/niri ~/.config; \
+ln -svf ~/dotfiles/wofi ~/.config; \
+ln -svf ~/dotfiles/swaync ~/.config; \
+ln -svf ~/dotfiles/waybar ~/.config
 ```

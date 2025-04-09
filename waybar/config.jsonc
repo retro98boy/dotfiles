@@ -1,4 +1,6 @@
 {
+  "include": "~/.config/waybar/custcom-modules.jsonc",
+
   "layer": "top",
   "position": "top",
   "mod": "dock",
@@ -6,8 +8,9 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "height": 40,
+
   "modules-left": ["custom/os_button", "niri/workspaces", "wlr/taskbar"],
-  "modules-center": ["clock"],
+  "modules-center": ["custom/swaync", "clock"],
   "modules-right": [
     "cpu",
     "temperature",
@@ -17,20 +20,18 @@
     "pulseaudio",
     "battery",
   ],
+
   "niri/workspaces": {
     "on-scroll-up": "niri msg action focus-workspace-up",
     "on-scroll-down": "niri msg action focus-workspace-down",
   },
-  "custom/os_button": {
-    "format": "󰣇",
-    "on-click": "pkill wofi || wofi",
-    "tooltip": false,
-  },
+
   "cpu": {
     "interval": 5,
     "format": " {usage}%",
     "max-length": 10,
   },
+
   "temperature": {
     "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
     "input-filename": "temp2_input",
@@ -39,6 +40,7 @@
     "format-critical": "({temperatureC}°C)",
     "format": "({temperatureC}°C)",
   },
+
   "disk": {
     "interval": 30,
     "format": "󰋊 {percentage_used}%",
@@ -47,6 +49,7 @@
     "unit": "GB",
     "tooltip-format": "Available {free} of {total}",
   },
+
   "memory": {
     "interval": 10,
     "format": " {percentage}%",
@@ -54,6 +57,7 @@
     "tooltip": true,
     "tooltip-format": "RAM - {used:0.1f}GiB used",
   },
+
   "wlr/taskbar": {
     "format": "{icon} {title:.17}",
     "icon-size": 28,
@@ -63,10 +67,12 @@
     "ignore-list": [],
     "on-click": "activate",
   },
+
   "tray": {
     "icon-size": 18,
     "spacing": 3,
   },
+
   "clock": {
     "format": "      {:%R\n %d.%m.%Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
@@ -92,6 +98,7 @@
       "on-scroll-down": "shift_down",
     },
   },
+
   "battery": {
     "states": {
       "good": 95,
@@ -104,6 +111,7 @@
     "format-alt": "{time} {icon}",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
   },
+
   "pulseaudio": {
     "max-volume": 150,
     "scroll-step": 10,

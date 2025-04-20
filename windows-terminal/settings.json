@@ -9,8 +9,7 @@
                 "action": "moveTab",
                 "direction": "forward"
             },
-            "id": "User.moveTab.793E2350",
-            "keys": "ctrl+alt+shift+period"
+            "id": "User.moveTab.793E2350"
         },
         {
             "command": 
@@ -21,212 +20,12 @@
             "id": "User.copy.644BA8F2"
         },
         {
-            "command": "unbound",
-            "keys": "ctrl+shift+tab"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+tab"
-        },
-        {
-            "command": "unbound",
-            "keys": "f11"
-        },
-        {
-            "command": "unbound",
-            "keys": "shift+insert"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+1"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+2"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+3"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+4"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+5"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+6"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+7"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+8"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+9"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+c"
-        },
-        {
-            "command": "unbound",
-            "keys": "enter"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+insert"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+1"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+2"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+3"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+4"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+5"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+6"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+7"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+8"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+f4"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+9"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+comma"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+comma"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "menu"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+up"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+down"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+right"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+left"
-        },
-        {
-            "command": "unbound",
-            "keys": "win+sc(41)"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+alt+left"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+minus"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+plus"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+d"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+right"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+down"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+up"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+numpad0"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+numpad_plus"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+numpad_minus"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+enter"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+m"
-        },
-        {
-            "command": "unbound",
-            "keys": "alt+left"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+'"
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "down"
+            },
+            "id": "User.splitPane.D5151347"
         },
         {
             "command": 
@@ -234,17 +33,19 @@
                 "action": "resizePane",
                 "direction": "up"
             },
-            "id": "User.resizePane.6CD791B",
-            "keys": "ctrl+shift+up"
+            "id": "User.resizePane.6CD791B"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "left"
+            },
+            "id": "User.swapPane.2A0DA8E0"
         },
         {
             "command": "paste",
             "id": "User.paste"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -252,8 +53,27 @@
                 "action": "resizePane",
                 "direction": "left"
             },
-            "id": "User.resizePane.2A0DA8E0",
-            "keys": "ctrl+shift+left"
+            "id": "User.resizePane.2A0DA8E0"
+        },
+        {
+            "command": 
+            {
+                "action": "swapPane",
+                "direction": "up"
+            },
+            "id": "User.swapPane.6CD791B"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "down"
+            },
+            "id": "User.moveFocus.F747588A"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         },
         {
             "command": 
@@ -261,17 +81,7 @@
                 "action": "swapPane",
                 "direction": "down"
             },
-            "id": "User.swapPane.F747588A",
-            "keys": "ctrl+alt+shift+j"
-        },
-        {
-            "command": 
-            {
-                "action": "swapPane",
-                "direction": "left"
-            },
-            "id": "User.swapPane.2A0DA8E0",
-            "keys": "ctrl+alt+shift+h"
+            "id": "User.swapPane.F747588A"
         },
         {
             "command": 
@@ -287,56 +97,42 @@
             {
                 "action": "prevTab"
             },
-            "id": "User.prevTab.0",
-            "keys": "ctrl+shift+comma"
+            "id": "User.prevTab.0"
         },
         {
             "command": 
             {
-                "action": "splitPane",
-                "split": "down"
+                "action": "resizePane",
+                "direction": "down"
             },
-            "id": "User.splitPane.D5151347",
-            "keys": "ctrl+shift+minus"
+            "id": "User.resizePane.F747588A"
+        },
+        {
+            "command": 
+            {
+                "action": "moveTab",
+                "direction": "backward"
+            },
+            "id": "User.moveTab.EF07D31B"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "left"
+            },
+            "id": "User.moveFocus.2A0DA8E0"
         },
         {
             "command": "closeWindow",
-            "id": "User.closeWindow",
-            "keys": "ctrl+shift+q"
+            "id": "User.closeWindow"
         },
         {
             "command": 
             {
                 "action": "nextTab"
             },
-            "id": "User.nextTab.0",
-            "keys": "ctrl+shift+period"
-        },
-        {
-            "command": 
-            {
-                "action": "splitPane",
-                "split": "right"
-            },
-            "id": "User.splitPane.864CD510",
-            "keys": "ctrl+shift+\\"
-        },
-        {
-            "command": 
-            {
-                "action": "closeTab"
-            },
-            "id": "User.closeTab.0",
-            "keys": "ctrl+shift+/"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "right"
-            },
-            "id": "User.moveFocus.87C324ED",
-            "keys": "ctrl+shift+l"
+            "id": "User.nextTab.0"
         },
         {
             "command": 
@@ -346,18 +142,39 @@
             "id": "User.splitPane.91AB55B1"
         },
         {
-            "command": "openTabRenamer",
-            "id": "User.openTabRenamer",
-            "keys": "ctrl+shift+r"
+            "command": 
+            {
+                "action": "splitPane",
+                "split": "right"
+            },
+            "id": "User.splitPane.864CD510"
+        },
+        {
+            "command": "togglePaneZoom",
+            "id": "User.togglePaneZoom"
+        },
+        {
+            "command": "toggleShaderEffects",
+            "id": "User.toggleShaderEffects"
         },
         {
             "command": 
             {
-                "action": "resizePane",
-                "direction": "down"
+                "action": "closeTab"
             },
-            "id": "User.resizePane.F747588A",
-            "keys": "ctrl+shift+down"
+            "id": "User.closeTab.0"
+        },
+        {
+            "command": 
+            {
+                "action": "moveFocus",
+                "direction": "right"
+            },
+            "id": "User.moveFocus.87C324ED"
+        },
+        {
+            "command": "openTabRenamer",
+            "id": "User.openTabRenamer"
         },
         {
             "command": 
@@ -365,8 +182,11 @@
                 "action": "resizePane",
                 "direction": "right"
             },
-            "id": "User.resizePane.87C324ED",
-            "keys": "ctrl+shift+right"
+            "id": "User.resizePane.87C324ED"
+        },
+        {
+            "command": "toggleSplitOrientation",
+            "id": "User.toggleSplitOrientation"
         },
         {
             "command": 
@@ -374,44 +194,7 @@
                 "action": "moveFocus",
                 "direction": "up"
             },
-            "id": "User.moveFocus.6CD791B",
-            "keys": "ctrl+shift+k"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "down"
-            },
-            "id": "User.moveFocus.F747588A",
-            "keys": "ctrl+shift+j"
-        },
-        {
-            "command": 
-            {
-                "action": "moveFocus",
-                "direction": "left"
-            },
-            "id": "User.moveFocus.2A0DA8E0",
-            "keys": "ctrl+shift+h"
-        },
-        {
-            "command": "togglePaneZoom",
-            "id": "User.togglePaneZoom"
-        },
-        {
-            "command": 
-            {
-                "action": "moveTab",
-                "direction": "backward"
-            },
-            "id": "User.moveTab.EF07D31B",
-            "keys": "ctrl+alt+shift+comma"
-        },
-        {
-            "command": "toggleSplitOrientation",
-            "id": "User.toggleSplitOrientation",
-            "keys": "ctrl+shift+b"
+            "id": "User.moveFocus.6CD791B"
         },
         {
             "command": 
@@ -425,30 +208,319 @@
             "command": 
             {
                 "action": "swapPane",
-                "direction": "up"
-            },
-            "id": "User.swapPane.6CD791B",
-            "keys": "ctrl+alt+shift+k"
-        },
-        {
-            "command": 
-            {
-                "action": "swapPane",
                 "direction": "right"
             },
-            "id": "User.swapPane.87C324ED",
-            "keys": "ctrl+alt+shift+l"
-        },
-        {
-            "command": "toggleShaderEffects",
-            "id": "User.toggleShaderEffects"
+            "id": "User.swapPane.87C324ED"
         }
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{56bdcc31-0239-49d4-8ed4-b7114a20099a}",
+    "defaultProfile": "{fede3c85-c2c2-466e-8d96-aa5594d0eccc}",
     "disableAnimations": true,
     "focusFollowMouse": true,
+    "keybindings": 
+    [
+        {
+            "id": null,
+            "keys": "alt+shift+up"
+        },
+        {
+            "id": "User.moveTab.793E2350",
+            "keys": "ctrl+alt+shift+period"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+shift+f"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+v"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+comma"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+down"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+tab"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+1"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+c"
+        },
+        {
+            "id": "User.moveFocus.6CD791B",
+            "keys": "ctrl+shift+k"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+tab"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "f11"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+numpad0"
+        },
+        {
+            "id": "User.nextTab.0",
+            "keys": "ctrl+shift+period"
+        },
+        {
+            "id": "User.swapPane.6CD791B",
+            "keys": "ctrl+alt+shift+k"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+5"
+        },
+        {
+            "id": "User.prevTab.0",
+            "keys": "ctrl+shift+comma"
+        },
+        {
+            "id": null,
+            "keys": "shift+insert"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+3"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+d"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+4"
+        },
+        {
+            "id": null,
+            "keys": "alt+down"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+6"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+insert"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+7"
+        },
+        {
+            "id": "User.openTabRenamer",
+            "keys": "ctrl+shift+r"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+8"
+        },
+        {
+            "id": "User.moveFocus.87C324ED",
+            "keys": "ctrl+shift+l"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+9"
+        },
+        {
+            "id": null,
+            "keys": "enter"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+1"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+left"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+2"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+9"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+3"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+4"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+7"
+        },
+        {
+            "id": "User.splitPane.D5151347",
+            "keys": "ctrl+shift+minus"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+right"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+5"
+        },
+        {
+            "id": "User.closeTab.0",
+            "keys": "ctrl+shift+/"
+        },
+        {
+            "id": "User.swapPane.87C324ED",
+            "keys": "ctrl+alt+shift+l"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+6"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+8"
+        },
+        {
+            "id": null,
+            "keys": "alt+f4"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+comma"
+        },
+        {
+            "id": null,
+            "keys": "alt+space"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+plus"
+        },
+        {
+            "id": null,
+            "keys": "menu"
+        },
+        {
+            "id": null,
+            "keys": "win+sc(41)"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+alt+left"
+        },
+        {
+            "id": null,
+            "keys": "alt+shift+minus"
+        },
+        {
+            "id": null,
+            "keys": "alt+right"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "id": null,
+            "keys": "alt+up"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+numpad_plus"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+enter"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+m"
+        },
+        {
+            "id": null,
+            "keys": "alt+left"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+shift+'"
+        },
+        {
+            "id": "User.resizePane.6CD791B",
+            "keys": "ctrl+shift+up"
+        },
+        {
+            "id": "User.toggleSplitOrientation",
+            "keys": "ctrl+shift+b"
+        },
+        {
+            "id": "User.resizePane.2A0DA8E0",
+            "keys": "ctrl+shift+left"
+        },
+        {
+            "id": "User.swapPane.F747588A",
+            "keys": "ctrl+alt+shift+j"
+        },
+        {
+            "id": "User.swapPane.2A0DA8E0",
+            "keys": "ctrl+alt+shift+h"
+        },
+        {
+            "id": "User.closeWindow",
+            "keys": "ctrl+shift+q"
+        },
+        {
+            "id": "User.splitPane.864CD510",
+            "keys": "ctrl+shift+\\"
+        },
+        {
+            "id": "User.resizePane.F747588A",
+            "keys": "ctrl+shift+down"
+        },
+        {
+            "id": "User.resizePane.87C324ED",
+            "keys": "ctrl+shift+right"
+        },
+        {
+            "id": "User.moveFocus.F747588A",
+            "keys": "ctrl+shift+j"
+        },
+        {
+            "id": "User.moveFocus.2A0DA8E0",
+            "keys": "ctrl+shift+h"
+        },
+        {
+            "id": "User.moveTab.EF07D31B",
+            "keys": "ctrl+alt+shift+comma"
+        }
+    ],
     "newTabMenu": 
     [
         {
@@ -481,7 +553,7 @@
             },
             {
                 "colorScheme": "MaterialDesignColors",
-                "commandline": "C:/msys64/msys2_shell.cmd -defterm -here -no-start -ucrt64",
+                "commandline": "C:/msys64/msys2_shell.cmd -ucrt64 -defterm -here -use-full-path -no-start -shell zsh",
                 "font": 
                 {
                     "face": "FiraCode Nerd Font Mono"
@@ -492,47 +564,33 @@
                 "padding": "0",
                 "scrollbarState": "hidden",
                 "startingDirectory": "%USERPROFILE%"
-            },
-            {
-                "colorScheme": "MaterialDesignColors",
-                "commandline": "C:/msys64/usr/bin/zsh.exe",
-                "font": 
-                {
-                    "face": "FiraCode Nerd Font Mono"
-                },
-                "guid": "{56bdcc31-0239-49d4-8ed4-b7114a20099a}",
-                "hidden": false,
-                "name": "Zsh",
-                "padding": "0",
-                "scrollbarState": "hidden",
-                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
     "schemes": 
     [
         {
+            "background": "#1D262A",
+            "black": "#435B67",
+            "blue": "#37B6FF",
+            "brightBlack": "#A1B0B8",
+            "brightBlue": "#70CFFF",
+            "brightCyan": "#9AFFE6",
+            "brightGreen": "#ADF7BE",
+            "brightPurple": "#FC669B",
+            "brightRed": "#FC746D",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FEE16C",
+            "cursorColor": "#EAEAEA",
+            "cyan": "#59FFD1",
+            "foreground": "#E7EBED",
+            "green": "#5CF19E",
             "name": "MaterialDesignColors",
-            "foreground": "#e7ebed",
-            "background": "#1d262a",
-            "selectionBackground": "#4e6a78",
-            "cursorColor": "#eaeaea",
-            "black": "#435b67",
-            "brightBlack": "#a1b0b8",
-            "red": "#fc3841",
-            "brightRed": "#fc746d",
-            "green": "#5cf19e",
-            "brightGreen": "#adf7be",
-            "yellow": "#fed032",
-            "brightYellow": "#fee16c",
-            "blue": "#37b6ff",
-            "brightBlue": "#70cfff",
-            "purple": "#fc226e",
-            "brightPurple": "#fc669b",
-            "cyan": "#59ffd1",
-            "brightCyan": "#9affe6",
-            "white": "#ffffff",
-            "brightWhite": "#ffffff"
+            "purple": "#FC226E",
+            "red": "#FC3841",
+            "selectionBackground": "#4E6A78",
+            "white": "#FFFFFF",
+            "yellow": "#FED032"
         }
     ],
     "showTabsInTitlebar": true,

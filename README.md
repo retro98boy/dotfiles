@@ -35,7 +35,7 @@ sudo apt install libncursesw5-dev autoconf gcc make cmake
 # 编译并安装
 ./Util/preconfig
 ./configure --prefix=/usr/local
-make -j12
+make -j$(nproc)
 make check
 sudo make install
 ```
@@ -71,7 +71,7 @@ Ubuntu：
 # 安装依赖和工具
 sudo apt install pkg-config libtool-bin gettext gcc make cmake unzip git
 # 编译并安装
-make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/local -j12
+make CMAKE_BUILD_TYPE=RelWithDebInfo CMAKE_INSTALL_PREFIX=/usr/local -j$(nproc)
 sudo make install
 ```
 

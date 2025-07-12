@@ -1,4 +1,5 @@
 -- 自举
+-- base on https://github.com/LazyVim/starter/blob/cb6349c8ae922d1c5745574f4d17b44f2731d451/lua/config/lazy.lua
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"

@@ -3,35 +3,33 @@ return {
     "saghen/blink.cmp",
     opts = {
       keymap = {
-        preset = "super-tab",
-        ["<C-p>"] = {},
-        ["<C-n>"] = {},
-        ["<C-k>"] = { "select_prev", "fallback" },
-        ["<C-j>"] = { "select_next", "fallback" },
-      },
-    },
-  },
+        preset = "none",
 
-  {
-    "akinsho/toggleterm.nvim",
-    version = false,
-    opts = {
-      size = 20,
-      open_mapping = [[<C-\>]],
-      hide_numbers = false,
-      autochdir = true,
-      shade_filetypes = {},
-      shade_terminals = true,
-      shading_factor = 3,
-      start_in_insert = true,
-      insert_mappings = true,
-      persist_size = true,
-      direction = "float",
-      close_on_exit = true,
-      shell = vim.o.shell,
-      float_opts = {
-        border = "curved",
-        winblend = 3,
+        ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
+        ["<C-c>"] = { "hide", "fallback" },
+
+        ["<Tab>"] = {
+          function(cmp)
+            if cmp.snippet_active() then
+              return cmp.accept()
+            else
+              return cmp.select_and_accept()
+            end
+          end,
+          "snippet_forward",
+          "fallback",
+        },
+        ["<S-Tab>"] = { "snippet_backward", "fallback" },
+
+        ["<Up>"] = { "select_prev", "fallback" },
+        ["<Down>"] = { "select_next", "fallback" },
+        ["<C-k>"] = { "select_prev", "fallback_to_mappings" },
+        ["<C-j>"] = { "select_next", "fallback_to_mappings" },
+
+        ["<C-b>"] = { "scroll_documentation_up", "fallback" },
+        ["<C-f>"] = { "scroll_documentation_down", "fallback" },
+
+        -- ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
       },
     },
   },

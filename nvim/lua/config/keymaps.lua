@@ -12,12 +12,6 @@
 local map = vim.api.nvim_set_keymap
 local opt = { noremap = true, silent = true }
 
--- 禁止打开lazyterm
-map("n", "<Leader>ft", "<Nop>", opt)
-map("n", "<Leader>fT", "<Nop>", opt)
-map("n", "<C-/>", "<Nop>", opt)
-map("n", "<C-_>", "<Nop>", opt)
-
 map("i", "jj", "<Esc>", opt)
 
 -- 使用Q代替q录制按键宏

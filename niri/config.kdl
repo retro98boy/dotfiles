@@ -1,6 +1,4 @@
 environment {
-  DISPLAY ":0"
-
   // ELECTRON_OZONE_PLATFORM_HINT "wayland"
   QT_QPA_PLATFORM "wayland;xcb"
 
@@ -150,7 +148,6 @@ hotkey-overlay {
 }
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
-spawn-at-startup "xwayland-satellite"
 spawn-at-startup "waybar"
 spawn-at-startup "swaync"
 spawn-at-startup "swww-daemon" "--format" "xrgb"

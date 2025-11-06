@@ -10,7 +10,7 @@ return {
   },
 
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       -- 禁止自动安装
       opts.ensure_installed = {}

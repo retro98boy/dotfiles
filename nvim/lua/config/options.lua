@@ -55,3 +55,4 @@ opt.foldlevel = 99
 
 vim.g.autoformat = false -- 禁止保存时自动格式化
 vim.g.snacks_animate = false
+vim.g.lazyvim_picker = "telescope"

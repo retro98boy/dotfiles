@@ -116,3 +116,6 @@ source $ZSH_PLUGIN_PATH/sudo/sudo.plugin.zsh
 # pure prompt
 source $ZSH_PLUGIN_PATH/pure/async.zsh
 source $ZSH_PLUGIN_PATH/pure/pure.zsh
+
+
+export PATH=$PATH:~/.local/bin

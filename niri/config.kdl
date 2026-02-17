@@ -1,5 +1,5 @@
 environment {
-  // ELECTRON_OZONE_PLATFORM_HINT "wayland"
+  ELECTRON_OZONE_PLATFORM_HINT "wayland"
   QT_QPA_PLATFORM "wayland;xcb"
 
   LANG "zh_CN.UTF-8"

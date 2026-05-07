@@ -150,7 +150,7 @@ screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 spawn-at-startup "waybar"
 spawn-at-startup "swaync"
-spawn-at-startup "swww-daemon" "--format" "xrgb"
+spawn-at-startup "awww-daemon" "--format" "xrgb"
 spawn-at-startup "fcitx5"
 spawn-at-startup "nm-applet"
 spawn-at-startup "blueman-applet"
